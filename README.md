@@ -5,4 +5,5 @@
 * React router
 * Tailwind css
 * Daisy Ui
-* 
+* react hook form
+* react tostaify
