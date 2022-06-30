@@ -1,21 +1,49 @@
-import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../Image/New Project.png';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../../firebase.init';
+import useBillersInfo from '../../../hooks/useBillersInfo';
 
 
 const Navbar = () => {
 
-    const [user] = useAuthState(auth);
+    // all billers
+    // const [billersInfo, setBillersInfo] = useBillersInfo('');
+    // // console.log(billersInfo)
 
-    const logout = () => {
-        // signOut(auth);
-        // for remove jwt
-        localStorage.removeItem('accessToken');
-    };
 
+
+    // // for amount
+    // const [oldAmount, setOldAmount] = useState(0);
+
+    // let [amount, setAmount] = useState(0);
+
+
+    // let totalPaidAmount = billersInfo.map((billerInfo) => {
+
+    //     setOldAmount(parseInt(billerInfo.paidAmount));
+
+    //     //set qut
+    //     let newAmount = oldAmount + parseInt(amount);
+
+    //     // set new quantity
+
+    //     // const quantity = newQuantity;
+    //     // // console.log(quantity);
+
+    //     // const updateItem = { quantity };
+
+
+    //     setAmount(newAmount);
+    //     // totalPaidAmount = amount + billerInfo.paidAmount
+
+    //     // console.log(billerInfo.paidAmount)
+    //     // console.log(newAmount, amount)
+    // })
+    // console.log(amount)
+    // // console.log(totalPaidAmount);
+
+
+    const signOut = <><Link to='/' className="btn text-white">Get started</Link></>
+    const totalPaid = <><p className='btn btn-ghost mr-5 text-green-800 font-bold'>Total Paid:  </p></>
 
 
     return (
@@ -25,26 +53,24 @@ const Navbar = () => {
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-1 shadow bg-base-100 rounded-box w-80">
+                        <li>{totalPaid}</li>
+
+                        <li> {signOut}</li>
                     </ul>
+
                 </div>
-                <Link to='/home' className="btn btn-ghost normal-case text-2xl font-bold text-secondary hover:bg-sky-200 hover:text-orange-600">
-                    <img className='w-7 pr-2' src={logo} alt="" /> Pixel Camera</Link>
+
+                <Link to='/' className="btn btn-ghost normal-case text-xl text-green-800 font-bold hover:text-emerald-800 ">Power-Hack</Link>
+
             </div>
 
 
-            {/* for dashboard  */}
-            <div className="navbar-end">
-                <div className=" hidden lg:flex ">
-                    <ul className="menu menu-horizontal p-0 font-bold ">
+            <div className="navbar-end hidden lg:flex text-center">
 
-                    </ul>
-                </div>
-                <label tabIndex="1" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-
+                {totalPaid}
+                {signOut}
             </div>
 
         </div>
