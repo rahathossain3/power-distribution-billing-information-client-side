@@ -31,14 +31,14 @@ const Home = () => {
                     {/* //modal  */}
                     <div>
                         {/* <!-- The button to open modal --> */}
-                        <label for="booking-modal" class="btn modal-button">open modal</label>
+                        <label htmlFor="booking-modal" className="btn modal-button">Add New Biller </label>
 
                         {/* <!-- Put this part before </body> tag-- > */}
-                        <input type="checkbox" id="booking-modal" class="modal-toggle" />
-                        <div class="modal modal-bottom md:modal-middle">
-                            <div class="modal-box">
+                        <input type="checkbox" id="booking-modal" className="modal-toggle" />
+                        <div className="modal modal-bottom md:modal-middle">
+                            <div className="modal-box">
 
-                                <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 
                                 <AddBillerInfo></AddBillerInfo>
 

@@ -9,6 +9,7 @@ const BillerInfo = () => {
     const handleEditInfo = (id) => {
         console.log('edit info', id);
     }
+
     const handleDeleteInfo = (id) => {
         console.log('delete info', id)
     }
