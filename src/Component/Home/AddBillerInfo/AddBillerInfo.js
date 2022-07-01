@@ -8,6 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 const AddBillerInfo = () => {
 
 
+
     // const [user] = useAuthState(auth)
 
     const { register, handleSubmit, reset } = useForm();
@@ -27,6 +28,7 @@ const AddBillerInfo = () => {
             .then(result => {
                 toast('Product Add successfully');
                 reset();
+
             })
     };
 
@@ -61,7 +63,7 @@ const AddBillerInfo = () => {
 
 
 
-                <input className='btn  btn-info hover:btn-ghost w-1/2 mx-auto mt-2 mb-16' type='submit' value="Add Item" />
+                <input className='btn  btn-info hover:btn-ghost w-1/2 mx-auto mt-2 mb-3' type='submit' value="Add Item" />
 
             </form>
             <ToastContainer />

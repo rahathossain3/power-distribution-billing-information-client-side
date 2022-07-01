@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import BillerInfo from './BillerInfo/BillerInfo';
+import AddBillerInfo from './AddBillerInfo/AddBillerInfo';
 import './Home.css'
-// import useBillersInfo from '../../hooks/useBillersInfo';
+
+
 
 
 const Home = () => {
 
     // const [billersInfo] = useBillersInfo([]);
+
+
+
 
     return (
         <div className=' lg:mx-10 m-10 '>
@@ -20,11 +24,31 @@ const Home = () => {
                     <input type="text" placeholder="Search Biller info" className="input input-bordered" />
                 </div>
                 <div className=" gap-2">
-                    <Link to='/addbillerinfo' className="btn border-rose-300 hover:bg-white hover:text-black btn-ghost text-white">Add New Biller</Link>
+
+                    {/*                     
+                   
+
+                    {/* //modal  */}
+                    <div>
+                        {/* <!-- The button to open modal --> */}
+                        <label for="booking-modal" class="btn modal-button">open modal</label>
+
+                        {/* <!-- Put this part before </body> tag-- > */}
+                        <input type="checkbox" id="booking-modal" class="modal-toggle" />
+                        <div class="modal modal-bottom md:modal-middle">
+                            <div class="modal-box">
+
+                                <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+
+                                <AddBillerInfo></AddBillerInfo>
+
+                            </div>
+                        </div>
+
+                    </div >
 
                 </div>
             </div>
-
 
 
             <BillerInfo />
