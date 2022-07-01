@@ -20,7 +20,7 @@ const Home = () => {
                     <input type="text" placeholder="Search Biller info" className="input input-bordered" />
                 </div>
                 <div className=" gap-2">
-                    <Link to='/' className="btn border-rose-300 hover:bg-white hover:text-black btn-ghost text-white">Add New Biller</Link>
+                    <Link to='/addbillerinfo' className="btn border-rose-300 hover:bg-white hover:text-black btn-ghost text-white">Add New Biller</Link>
 
                 </div>
             </div>

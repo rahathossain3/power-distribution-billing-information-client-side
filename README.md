@@ -6,4 +6,4 @@
 * Tailwind css
 * Daisy Ui
 * react hook form
-* react tostaify
+<!-- * react tostaify -->

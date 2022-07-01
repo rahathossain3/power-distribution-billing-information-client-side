@@ -9,6 +9,7 @@ import NotFound from './Component/Shared/NotFound/NotFound';
 import Navbar from './Component/Shared/Navbar/Navbar';
 import Login from './Component/Login/Login';
 import Registration from './Component/Login/Registration';
+import AddBillerInfo from './Component/Home/AddBillerInfo/AddBillerInfo';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
 
         <Route path='/login' element={<Login />}></Route>
         <Route path='/registration' element={<Registration />}></Route>
+
+
+        <Route path='/addbillerinfo' element={<AddBillerInfo />}></Route>
 
 
 
