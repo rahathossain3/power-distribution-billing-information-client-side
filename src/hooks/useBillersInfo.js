@@ -7,7 +7,7 @@ const useBillersInfo = () => {
     useEffect(() => {
         fetch('http://localhost:5000/billing-list')
             .then(res => res.json())
-            .then(data => setBillersInfo(data));
+            .then(setBillersInfo);
     }, []);
 
     return [billersInfo, setBillersInfo]

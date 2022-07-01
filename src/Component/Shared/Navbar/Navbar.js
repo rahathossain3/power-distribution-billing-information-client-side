@@ -1,45 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useBillersInfo from '../../../hooks/useBillersInfo';
 
 
 const Navbar = () => {
 
-    // all billers
-    // const [billersInfo, setBillersInfo] = useBillersInfo('');
-    // // console.log(billersInfo)
+
+    // const [state, setState] = useState([])
+
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/billing-list')
+    //         .then(res => res.json())
+    //         .then(data => setState(data));
+    // }, []);
+
+    // // all billers
+
+    // console.log(state)
 
 
-
-    // // for amount
-    // const [oldAmount, setOldAmount] = useState(0);
-
-    // let [amount, setAmount] = useState(0);
-
-
-    // let totalPaidAmount = billersInfo.map((billerInfo) => {
-
-    //     setOldAmount(parseInt(billerInfo.paidAmount));
-
-    //     //set qut
-    //     let newAmount = oldAmount + parseInt(amount);
-
-    //     // set new quantity
-
-    //     // const quantity = newQuantity;
-    //     // // console.log(quantity);
-
-    //     // const updateItem = { quantity };
-
-
-    //     setAmount(newAmount);
-    //     // totalPaidAmount = amount + billerInfo.paidAmount
-
-    //     // console.log(billerInfo.paidAmount)
-    //     // console.log(newAmount, amount)
-    // })
-    // console.log(amount)
-    // // console.log(totalPaidAmount);
 
 
     const signOut = <><Link to='/' className="btn text-white">Get started</Link></>
@@ -54,7 +33,7 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
 
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-1 shadow bg-base-100 rounded-box w-80">
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-1 shadow bg-base-100 rounded-box w-56">
                         <li>{totalPaid}</li>
 
                         <li> {signOut}</li>

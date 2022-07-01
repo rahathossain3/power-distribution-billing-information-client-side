@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 // toastify
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Home from './Home/Home';
+import Home from './Component/Home/Home';
 import NotFound from './Component/Shared/NotFound/NotFound';
 import Navbar from './Component/Shared/Navbar/Navbar';
 
