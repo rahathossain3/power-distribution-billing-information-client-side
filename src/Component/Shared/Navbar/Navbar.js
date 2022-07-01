@@ -20,9 +20,9 @@ const Navbar = () => {
 
 
 
-
-    const signOut = <><Link to='/' className="btn text-white">Get started</Link></>
     const totalPaid = <><p className='btn btn-ghost mr-5 text-green-800 font-bold'>Total Paid:  </p></>
+    const signOut = <><Link to='/' className="btn text-white">Sign Out</Link></>
+
 
 
     return (
