@@ -16,7 +16,7 @@ const AddBillerInfo = () => {
 
     const onSubmit = async (data) => {
         //  console.log(data);
-        const url = `http://localhost:5000/add-billing`;
+        const url = `https://tragically-keener-49325.herokuapp.com/add-billing`;
         fetch(url, {
             method: 'POST',
             headers: {

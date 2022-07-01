@@ -5,7 +5,7 @@ const useBillersInfo = () => {
     const [billersInfo, setBillersInfo] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/billing-list')
+        fetch('https://tragically-keener-49325.herokuapp.com/billing-list')
             .then(res => res.json())
             .then(setBillersInfo);
     }, []);
