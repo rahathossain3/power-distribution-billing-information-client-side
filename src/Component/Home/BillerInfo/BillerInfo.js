@@ -9,8 +9,8 @@ const BillerInfo = () => {
     const handleEditInfo = (id) => {
         console.log('edit info', id);
     }
-    const handleDeleteInfo = () => {
-        console.log('delete info')
+    const handleDeleteInfo = (id) => {
+        console.log('delete info', id)
     }
 
 
@@ -46,7 +46,7 @@ const BillerInfo = () => {
                                         </div>
 
                                         <div>
-                                            <button onClick={() => handleEditInfo(billerInfo._id)} className='btn'>Delete Info</button>
+                                            <button onClick={() => handleDeleteInfo(billerInfo._id)} className='btn'>Delete Info</button>
                                         </div>
                                     </td>
 
