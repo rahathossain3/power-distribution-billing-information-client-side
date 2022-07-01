@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BillerInfo from './BillerInfo/BillerInfo';
 import './Home.css'
+// import useBillersInfo from '../../hooks/useBillersInfo';
+
 
 const Home = () => {
+
+    // const [billersInfo] = useBillersInfo([]);
+
     return (
         <div className=' lg:mx-10 m-10 '>
 
-            <div className="navbar biller-bar-font rounded bg-slate-700 flex justify-between lg:flex-row flex-col gap-4">
+            <div className="navbar biller-bar-font rounded bg-slate-700 flex justify-between lg:flex-row flex-col gap-4 mb-10">
                 <div className="text-white">
                     Biller Information
                 </div>
@@ -19,6 +25,9 @@ const Home = () => {
                 </div>
             </div>
 
+
+
+            <BillerInfo />
 
         </div>
     );

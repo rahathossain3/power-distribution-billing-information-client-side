@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useBillersInfo from '../../../hooks/useBillersInfo';
+// import useBillersInfo from '../../../hooks/useBillersInfo';
 
 
 const Navbar = () => {
